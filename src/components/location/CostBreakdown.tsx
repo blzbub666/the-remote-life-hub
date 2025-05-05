@@ -6,8 +6,18 @@ interface CostBreakdownProps {
   costData: CityCostData;
 }
 
+interface CostCategory {
+  name: string;
+  value: number;
+  percentage?: number; // Add this to define the percentage property
+  details: {
+    name: string;
+    value: number;
+  }[];
+}
+
 export function CostBreakdown({ costData }: CostBreakdownProps) {
-  const categories = [
+  const categories: CostCategory[] = [
     { 
       name: "Housing", 
       value: costData.housing.monthlyRent, 
