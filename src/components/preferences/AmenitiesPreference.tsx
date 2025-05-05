@@ -33,7 +33,7 @@ export function AmenitiesPreference({
   };
 
   return (
-    <div className="space-y-6 p-6 bg-card rounded-lg shadow-sm">
+    <div className="space-y-6 p-6 bg-card rounded-lg shadow-sm border border-gray-100">
       <div>
         <h3 className="text-xl font-semibold mb-4">Must-Have Amenities</h3>
         <p className="text-muted-foreground mb-6">
@@ -42,15 +42,16 @@ export function AmenitiesPreference({
 
         <div className="space-y-8">
           <div>
-            <Label className="mb-4 block">Available Amenities</Label>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-2">
+            <Label className="mb-4 block font-medium">Available Amenities</Label>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="coworkingSpaces"
                   checked={amenities.coworkingSpaces}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("coworkingSpaces", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="coworkingSpaces"
@@ -60,13 +61,14 @@ export function AmenitiesPreference({
                 </label>
               </div>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="cafes"
                   checked={amenities.cafes}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("cafes", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="cafes"
@@ -76,13 +78,14 @@ export function AmenitiesPreference({
                 </label>
               </div>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="publicTransport"
                   checked={amenities.publicTransport}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("publicTransport", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="publicTransport"
@@ -92,13 +95,14 @@ export function AmenitiesPreference({
                 </label>
               </div>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="healthcare"
                   checked={amenities.healthcare}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("healthcare", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="healthcare"
@@ -108,13 +112,14 @@ export function AmenitiesPreference({
                 </label>
               </div>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="safety"
                   checked={amenities.safety}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("safety", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="safety"
@@ -124,13 +129,14 @@ export function AmenitiesPreference({
                 </label>
               </div>
               
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3 bg-gray-50 p-3 rounded-md">
                 <Checkbox
                   id="nightlife"
                   checked={amenities.nightlife}
                   onCheckedChange={(checked) =>
                     handleAmenityChange("nightlife", checked as boolean)
                   }
+                  className="h-5 w-5"
                 />
                 <label
                   htmlFor="nightlife"
@@ -143,7 +149,7 @@ export function AmenitiesPreference({
           </div>
 
           <div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between mb-3 mt-6">
               <Label>How important are these amenities to you?</Label>
               <span className="font-medium">
                 {importance === 1

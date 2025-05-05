@@ -18,7 +18,7 @@ export function BudgetPreference({
   onImportanceChange,
 }: BudgetPreferenceProps) {
   return (
-    <div className="space-y-6 p-6 bg-card rounded-lg shadow-sm">
+    <div className="space-y-6 p-6 bg-card rounded-lg shadow-sm border border-gray-100">
       <div>
         <h3 className="text-xl font-semibold mb-4">Budget Range</h3>
         <p className="text-muted-foreground mb-6">
@@ -27,7 +27,7 @@ export function BudgetPreference({
 
         <div className="space-y-8">
           <div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between mb-3">
               <Label>Budget Range (USD per month)</Label>
               <span className="font-medium">
                 ${minBudget} - ${maxBudget}
@@ -48,7 +48,7 @@ export function BudgetPreference({
           </div>
 
           <div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between mb-3 mt-6">
               <Label>How important is budget to you?</Label>
               <span className="font-medium">
                 {importance === 1

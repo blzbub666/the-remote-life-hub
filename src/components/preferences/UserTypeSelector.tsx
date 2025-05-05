@@ -16,16 +16,16 @@ export function UserTypeSelector({ selectedType, onSelect }: UserTypeSelectorPro
         <Button
           onClick={() => onSelect("remoteWorker")}
           variant={selectedType === "remoteWorker" ? "default" : "outline"}
-          className={`h-auto py-6 px-8 flex flex-col items-center ${
+          className={`h-auto py-8 px-8 flex flex-col items-center ${
             selectedType === "remoteWorker" 
-              ? "bg-app-blue hover:bg-app-blue/90" 
+              ? "bg-app-blue hover:bg-app-blue/90 text-white" 
               : "hover:border-app-blue hover:text-app-blue"
           }`}
         >
-          <div className="mb-3">
-            <Laptop size={36} />
+          <div className="mb-4 p-3 rounded-full bg-opacity-20 bg-white">
+            <Laptop size={40} className={selectedType === "remoteWorker" ? "text-white" : ""} />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Remote Worker</h3>
+          <h3 className="text-xl font-semibold mb-3">Remote Worker</h3>
           <p className="text-sm opacity-90 text-center">
             Digital nomad, freelancer, or remote employee looking for the perfect location to work and live.
           </p>
@@ -34,16 +34,16 @@ export function UserTypeSelector({ selectedType, onSelect }: UserTypeSelectorPro
         <Button
           onClick={() => onSelect("vanlifer")}
           variant={selectedType === "vanlifer" ? "default" : "outline"}
-          className={`h-auto py-6 px-8 flex flex-col items-center ${
+          className={`h-auto py-8 px-8 flex flex-col items-center ${
             selectedType === "vanlifer" 
-              ? "bg-app-green hover:bg-app-green/90" 
+              ? "bg-app-green hover:bg-app-green/90 text-white" 
               : "hover:border-app-green hover:text-app-green"
           }`}
         >
-          <div className="mb-3">
-            <Caravan size={36} />
+          <div className="mb-4 p-3 rounded-full bg-opacity-20 bg-white">
+            <Caravan size={40} className={selectedType === "vanlifer" ? "text-white" : ""} />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Vanlifer</h3>
+          <h3 className="text-xl font-semibold mb-3">Vanlifer</h3>
           <p className="text-sm opacity-90 text-center">
             Van dweller or nomadic traveler seeking locations with good overnight parking, amenities, and accessibility.
           </p>
