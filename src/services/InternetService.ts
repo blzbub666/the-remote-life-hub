@@ -136,8 +136,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Parks', 'Libraries', 'City Center']
     },
     mobileData: {
-      4gCoverage: 98,
-      5gAvailable: true,
+      "4gCoverage": 98,
+      "5gAvailable": true,
       providers: ['MEO', 'NOS', 'Vodafone'],
       averagePrice: 15
     }
@@ -175,8 +175,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Cafes', 'Malls']
     },
     mobileData: {
-      4gCoverage: 95,
-      5gAvailable: false,
+      "4gCoverage": 95,
+      "5gAvailable": false,
       providers: ['AIS', 'DTAC', 'True Move'],
       averagePrice: 10
     }
@@ -214,8 +214,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Parks', 'Malls', 'Some Streets']
     },
     mobileData: {
-      4gCoverage: 90,
-      5gAvailable: false,
+      "4gCoverage": 90,
+      "5gAvailable": false,
       providers: ['Claro', 'Tigo', 'Movistar'],
       averagePrice: 12
     }
@@ -253,8 +253,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Cafes', 'Hotels', 'Coworking Spaces']
     },
     mobileData: {
-      4gCoverage: 80,
-      5gAvailable: false,
+      "4gCoverage": 80,
+      "5gAvailable": false,
       providers: ['Telkomsel', 'XL', 'Indosat'],
       averagePrice: 15
     }
@@ -292,8 +292,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Cafes', 'Public Transport', 'Libraries', 'City Center']
     },
     mobileData: {
-      4gCoverage: 99,
-      5gAvailable: true,
+      "4gCoverage": 99,
+      "5gAvailable": true,
       providers: ['O2', 'T-Mobile', 'Vodafone'],
       averagePrice: 20
     }
@@ -331,8 +331,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Parks', 'Cafes', 'Some Public Areas']
     },
     mobileData: {
-      4gCoverage: 92,
-      5gAvailable: true,
+      "4gCoverage": 92,
+      "5gAvailable": true,
       providers: ['Telcel', 'Movistar', 'AT&T'],
       averagePrice: 15
     }
@@ -370,8 +370,8 @@ const MOCK_INTERNET_DATA: CityInternetData[] = [
       freeLocations: ['Cafes', 'Libraries', 'Public Spaces']
     },
     mobileData: {
-      4gCoverage: 95,
-      5gAvailable: true,
+      "4gCoverage": 95,
+      "5gAvailable": true,
       providers: ['Verizon', 'AT&T', 'T-Mobile'],
       averagePrice: 60
     }

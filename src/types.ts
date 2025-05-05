@@ -160,8 +160,8 @@ export interface CityInternetData {
     freeLocations: string[];
   };
   mobileData: {
-    4gCoverage: number;
-    5gAvailable: boolean;
+    "4gCoverage": number;
+    "5gAvailable": boolean;
     providers: string[];
     averagePrice: number;
   };
