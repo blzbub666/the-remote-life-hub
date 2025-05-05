@@ -42,8 +42,8 @@ export function AmenitiesPreference({
 
         <div className="space-y-8">
           <div>
-            <Label className="mb-4 block">Must-Have Amenities</Label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Label className="mb-4 block">Available Amenities</Label>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-2">
                 <Checkbox
                   id="coworkingSpaces"

@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { UserType } from "@/types";
+import { Laptop, Caravan } from "lucide-react";
 
 interface UserTypeSelectorProps {
   selectedType: UserType | null;
@@ -15,15 +16,17 @@ export function UserTypeSelector({ selectedType, onSelect }: UserTypeSelectorPro
         <Button
           onClick={() => onSelect("remoteWorker")}
           variant={selectedType === "remoteWorker" ? "default" : "outline"}
-          className={`h-auto py-6 px-8 flex flex-col items-center text-left ${
+          className={`h-auto py-6 px-8 flex flex-col items-center ${
             selectedType === "remoteWorker" 
               ? "bg-app-blue hover:bg-app-blue/90" 
               : "hover:border-app-blue hover:text-app-blue"
           }`}
         >
-          <div className="text-4xl mb-3">💻</div>
+          <div className="mb-3">
+            <Laptop size={36} />
+          </div>
           <h3 className="text-xl font-semibold mb-2">Remote Worker</h3>
-          <p className="text-sm opacity-90">
+          <p className="text-sm opacity-90 text-center">
             Digital nomad, freelancer, or remote employee looking for the perfect location to work and live.
           </p>
         </Button>
@@ -31,15 +34,17 @@ export function UserTypeSelector({ selectedType, onSelect }: UserTypeSelectorPro
         <Button
           onClick={() => onSelect("vanlifer")}
           variant={selectedType === "vanlifer" ? "default" : "outline"}
-          className={`h-auto py-6 px-8 flex flex-col items-center text-left ${
+          className={`h-auto py-6 px-8 flex flex-col items-center ${
             selectedType === "vanlifer" 
               ? "bg-app-green hover:bg-app-green/90" 
               : "hover:border-app-green hover:text-app-green"
           }`}
         >
-          <div className="text-4xl mb-3">🚐</div>
+          <div className="mb-3">
+            <Caravan size={36} />
+          </div>
           <h3 className="text-xl font-semibold mb-2">Vanlifer</h3>
-          <p className="text-sm opacity-90">
+          <p className="text-sm opacity-90 text-center">
             Van dweller or nomadic traveler seeking locations with good overnight parking, amenities, and accessibility.
           </p>
         </Button>
